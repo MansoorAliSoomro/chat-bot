@@ -1,0 +1,144 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": [
+				"Hi",
+				"How are you",
+				"Is anyone there?",
+				"Hello",
+				"Good day"
+			],
+			"responses": [
+				"Hello, thanks for visiting",
+				"Good to see you again",
+				"Hi there, how can I help?"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "goodbye",
+			"patterns": [
+				"Bye",
+				"See you later",
+				"Goodbye"
+			],
+			"responses": [
+				"See you later, thanks for visiting",
+				"Have a nice day",
+				"Bye! Come back again soon."
+			]
+		},
+		{
+			"tag": "thanks",
+			"patterns": [
+				"Thanks",
+				"Thank you",
+				"That's helpful"
+			],
+			"responses": [
+				"Happy to help!",
+				"Any time!",
+				"My pleasure"
+			]
+		},
+		{
+			"tag": "hours",
+			"patterns": [
+				"What hours are you open?",
+				"what are your hours?",
+				"When are you open?",
+				"hourly timings",
+				"hour",
+				"time"
+			],
+			"responses": [
+				"We're open every day 9am-9pm",
+				"Our hours are 9am-9pm every day"
+			]
+		},
+		{
+			"tag": "accountbalance",
+			"patterns": [
+				"want to check my account balance",
+				"what is my account balance",
+				"whats the balance of my account",
+				"balance in my account",
+				"tell me my account balance",
+				"how much money is in my account"
+			],
+			"responses": [
+				"Your account balance is 1000 ruppes"
+			]
+		},
+		{
+			"tag": "fundtransfer",
+			"patterns": [
+				"I want to transfer some funds",
+				"I want to send some money",
+				"Let's make transaction",
+				"I want to make a transaction",
+				"Can you transfer some money to a friend",
+				"Send funds",
+				"Send money"
+			],
+			"responses": [
+				"Who do you want to send the money to"
+			]
+		},
+		{
+			"tag": "debitcard",
+			"patterns": [
+				"debit card limit",
+				"debit limit",
+				"debit card",
+				"what is debit card limit",
+				"what is my debit card limit"
+			],
+			"responses": [
+				"Your debit card limit is 25000 rupees"
+			]
+		},
+		{
+			"tag": "creditcard",
+			"patterns": [
+				"credit card limit",
+				"credit limit",
+				"credit card",
+				"what is credit card limit",
+				"what is my credit card limit"
+			],
+			"responses": [
+				"Your credit card limit is 200000 rupees"
+			]
+		},
+		{
+			"tag": "debitcardloss",
+			"patterns": [
+				"lost debit card",
+				"misplaced debit card",
+				"Block debit card",
+				"Deactivate debit card",
+				"I have lost my debit card",
+				"lost my debit card"
+			],
+			"responses": [
+				"Debit Card deactivated"
+			]
+		},
+		{
+			"tag": "creditcardloss",
+			"patterns": [
+				"lost credit card",
+				"misplaced credit card",
+				"Block credit card",
+				"Deactivate credit card",
+				"I have lost my credit card",
+				"lost my credit card"
+			],
+			"responses": [
+				"Credit Card deactivated"
+			]
+		}
+	]
+}

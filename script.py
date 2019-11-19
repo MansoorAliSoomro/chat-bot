@@ -1,0 +1,1 @@
+print("This response is from script file")
