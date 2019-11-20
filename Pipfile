@@ -8,6 +8,7 @@ verify_ssl = true
 [packages]
 Flask = ">=1.1.1"
 gunicorn = ">=19.9.0"
+numpy = "*"
 
 [requires]
 python_version = "3.7"
