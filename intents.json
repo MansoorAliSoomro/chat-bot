@@ -139,6 +139,17 @@
 			"responses": [
 				"Credit Card deactivated"
 			]
+		},
+		{
+			"tag": "open",
+			"patterns": [
+				"open",
+				"select",
+				"select this"
+			],
+			"responses": [
+				"opening babarq"
+			]
 		}
 	]
 }
