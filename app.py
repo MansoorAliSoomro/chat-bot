@@ -7,17 +7,17 @@ import os
 app = Flask(__name__)
 
 
-@app.route('/predict', methods=['POST'])
-def get():
-    # result in form of array representing probablistic classes
-    #resultClassify = res.classify(request.json["sentence"]) 
-    resultResponse = res.response(request.json["sentence"])
-    responseDict = {} 
-    #for r in resultClassify:
-        #responseDict[r[0]] = str(r[1])
-    responseDict["sentence"] = resultResponse
-    print(responseDict)
-    return jsonify ( responseDict )
+# @app.route('/predict', methods=['POST'])
+# def get():
+#     # result in form of array representing probablistic classes
+#     #resultClassify = res.classify(request.json["sentence"]) 
+#     resultResponse = res.response(request.json["sentence"])
+#     responseDict = {} 
+#     #for r in resultClassify:
+#         #responseDict[r[0]] = str(r[1])
+#     responseDict["sentence"] = resultResponse
+#     print(responseDict)
+#     return jsonify ( responseDict )
 
 
 @app.route('/test', methods=['GET'])
