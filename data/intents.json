@@ -1,0 +1,159 @@
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": [
+				"Hi",
+				"How are you",
+				"Hello",
+				"Good day"
+			],
+			"responses": [
+				"Hello, thanks for visiting",
+				"Good to see you again",
+				"Hi there, how can I help?"
+			]
+		},
+		{
+			"tag": "currentaccount",
+			"patterns": [
+				"get current account details",
+				"current account details",
+				"get details of my current account"
+			],
+			"responses": [
+				"you account details"
+			]
+		},
+		{
+			"tag": "accountbalance",
+			"patterns": [
+				"account balance",
+				"what is my account balance",
+				"cash in my account",
+				"money in my account"
+			],
+			"responses": [
+				"your balance is"
+			]
+		},
+		{
+			"tag": "accountlist",
+			"patterns": [
+				"list all my accounts",
+				"list of accounts",
+				"list of account",
+				"show all of accounts",
+				"all accounts"
+			],
+			"responses": [
+				"This is your account list"
+			]
+		},
+		{
+			"tag": "beneficiarieslist",
+			"patterns": [
+				"list all my beneficiaries",
+				"list all my beneficiary",
+				"list of beneficiaries",
+				"list of my beneficiary",
+				"all beneficiaries",
+				"all beneficiary"
+			],
+			"responses": [
+				"This is your account list"
+			]
+		},
+		{
+			"tag": "transaction",
+			"patterns": [
+				"i want to transfer funds",
+				"i want to make a transaction",
+				"transaction",
+				"send funds",
+				"send cash",
+				"Send money"
+			],
+			"responses": [
+				"Who do you want to send the money to"
+			],
+			"context_set": "transaction"
+		},
+		{
+			"tag": "switch account",
+			"patterns": [
+				"i want to switch account",
+				"switch accounts"
+			],
+			"responses": [
+				"select an option"
+			],
+			"context_set": {
+				"switch account": ""
+			}
+		},
+		{
+			"tag": "currentbeneficiarydetail",
+			"patterns": [
+				"show beneficiary detail",
+				"show one beneficiary detail",
+				"list beneficiary detail"
+			],
+			"responses": [
+				"select an option"
+			],
+			"context_set": {
+				"switch account": ""
+			}
+		},
+		{
+			"tag": "options",
+			"patterns": [
+				"select"
+			],
+			"responses": [
+				"either transfer"
+			],
+			"context_filter": [
+				"transaction",
+				"switch account"
+			],
+			"context_set": "transfer_cash"
+		},
+		{
+			"tag": "transfer",
+			"patterns": [
+				"give"
+			],
+			"responses": [
+				"transfer cash is successfull"
+			],
+			"context_filter": [
+				"transfer_cash",
+				"transaction"
+			]
+		},
+		{
+			"tag": "username",
+			"patterns": [
+				"what is my username",
+				"username"
+			],
+			"responses": [
+				"your username is mansoor"
+			]
+		},
+		{
+			"tag": "transactionhistory",
+			"patterns": [
+				"list all transaction history",
+				"show my previous transaction",
+				"show transaction archive",
+				"list all previous transaction"
+			],
+			"responses": [
+				"here are your previous transactions"
+			]
+		}
+	]
+}
