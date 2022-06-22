@@ -24,7 +24,7 @@ Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
 Markdown==3.2.2
 MarkupSafe==1.1.1
-numpy==1.16.2
+numpy==1.22.0
 pathspec==0.5.9
 protobuf==3.12.2
 pypiwin32==223
