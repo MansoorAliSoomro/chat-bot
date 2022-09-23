@@ -26,7 +26,7 @@ Markdown==3.2.2
 MarkupSafe==1.1.1
 numpy==1.16.2
 pathspec==0.5.9
-protobuf==3.12.2
+protobuf==3.18.3
 pypiwin32==223
 python-dateutil==2.8.0
 pywin32==227
